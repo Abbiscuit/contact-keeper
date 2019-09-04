@@ -59,6 +59,7 @@ const ContactForm = () => {
         name="name"
         value={name}
         onChange={onChange}
+        required
       />
       <input
         type="email"
@@ -66,6 +67,7 @@ const ContactForm = () => {
         name="email"
         value={email}
         onChange={onChange}
+        required
       />
       <input
         type="text"
@@ -73,6 +75,7 @@ const ContactForm = () => {
         name="phone"
         value={phone}
         onChange={onChange}
+        required
       />
       <h5>Contact Type</h5>
       <input
@@ -81,15 +84,15 @@ const ContactForm = () => {
         value="personal"
         checked={type === 'personal'}
         onChange={onChange}
-      />{' '}
-      Personal{' '}
+      />
+      Personal
       <input
         type="radio"
         name="type"
         value="professional"
         checked={type === 'professional'}
         onChange={onChange}
-      />{' '}
+      />
       Professional
       <div>
         <input
